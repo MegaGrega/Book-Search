@@ -16,6 +16,9 @@ function App() {
           <Route exact path="/">
           <Search></Search>
           </Route>
+          <Route exact path="/saved">
+          <Saved></Saved>
+          </Route>
           <Route path="*">
             <NoMatch></NoMatch>
           </Route>

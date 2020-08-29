@@ -48,7 +48,7 @@ function Search() {
                 <Col size="md-12">
                     {books ? (
                         <Col size={'sm-12'}>
-                            {(books.length > 0) ? books.map(book => <SearchResult key={book.id} id={book.id} searched={true} title={book.volumeInfo.title} authors={book.volumeInfo.authors} description={book.volumeInfo.description} link={book.volumeInfo.infoLink} img={(book.volumeInfo.imageLinks) ? book.volumeInfo.imageLinks.smallThumbnail :"https://via.placeholder.com/140x100" } />) : <h2>Can't find what you're looking for</h2>}
+                            {(books.length > 0) ? books.map(book => <SearchResult key={book.id} id={book.id} title={book.volumeInfo.title} authors={book.volumeInfo.authors} description={book.volumeInfo.description} link={book.volumeInfo.infoLink} img={(book.volumeInfo.imageLinks) ? book.volumeInfo.imageLinks.smallThumbnail :"http://placekitten.com/200/300" } />) : <h2>No search results</h2>}
                         </Col>
                     ) : (
                             <h3>No Results to Display</h3>
